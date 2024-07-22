@@ -1,11 +1,19 @@
 @import "./reset.css";
 
-body {
-    margin: auto;
-    font-size: 20px;
+:root {
+    --green-color: #B9FF66;
+    --dark-white-color: #F3F3F3;
+    --white-color: #FFFFFF;
+    --black-color: #292A32;
+    --dark-black-color: #000000;
+}
+
+/*body {*/
+/*    width: 1240px;*/
+/*}*/
+
+a {
     font-family: "Space Grotesk", sans-serif;
-    padding: 0 100px 0 100px;
-    width: 1440px;
 }
 
 button {
@@ -14,36 +22,43 @@ button {
 
 h1 {
     font-size: 60px;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 h2 {
     font-size: 40px;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 h3 {
     font-size: 30px;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 h4 {
     font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 p {
     font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .btn_white {
-    background-color: white;
+    background-color: var(--white-color);
 }
 
 .btn_black {
-    color: white;
-    background-color: #191A23;
+    color: var(--white-color);
+    background-color: var(--black-color);
 }
 
 .btn {
     padding: 20px 35px;
     border-radius: 14px;
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .header-with-bg {
@@ -52,13 +67,13 @@ p {
 }
 
 .header-with-bg_green {
-    box-shadow: 0 0 0 3px #B9FF66;
-    background-color: #B9FF66;
+    box-shadow: 0 0 0 3px var(--green-color);
+    background-color: var(--green-color);
 }
 
 .header-with-bg_white {
-    box-shadow: 0 0 0 3px white;
-    background-color: white;
+    box-shadow: 0 0 0 3px var(--white-color);
+    background-color: var(--white-color);
 }
 
 .header {
@@ -67,6 +82,7 @@ p {
     align-items: center;
     height: 68px;
     margin-top: 40px;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .navigation {
@@ -87,8 +103,9 @@ p {
 
 
 .list__link {
+    font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: var(--black-color);
 }
 
 .landing-page__about {
@@ -131,8 +148,8 @@ p {
 }
 
 .block_underline {
-    box-shadow: 0 5px 0 0 #191A23;
-    border: 1px solid black;
+    box-shadow: 0 5px 0 0 var(--black-color);
+    border: 1px solid var(--dark-black-color);
 }
 
 .learn-more__elem {
@@ -146,30 +163,30 @@ p {
 }
 
 .elem_green {
-    background-color: #B9FF66;
+    background-color: var(--green-color);
     border-radius: 45px;
 }
 
 .elem_white {
-    background-color: #F3F3F3;
+    background-color: var(--dark-white-color);
     border-radius: 45px;
 }
 
 .elem_black {
-    background-color: #191A23;
+    background-color: var(--black-color);
     border-radius: 45px;
 }
 
 .link_black {
-    color: black;
+    color: var(--dark-black-color);
 }
 
 .link_white {
-    color: white;
+    color: var(--white-color);
 }
 
 .link_green {
-    color: #B9FF66;
+    color: var(--green-color);
 }
 
 .learn-more__container{
@@ -226,7 +243,7 @@ p {
 }
 
 .text_white {
-    color: white;
+    color: var(--white-color);
 }
 
 .options-list__option {
@@ -343,7 +360,7 @@ p {
 .contacts__form__input {
     display: flex;
     flex-direction: column;
-    border: 1px #191A23;
+    border: 1px var(--black-color);
 }
 
 .input {
@@ -351,21 +368,17 @@ p {
     border-radius: 14px;
     padding: 18px 30px;
     margin-bottom: 25px;
-    border: 1px solid black;
+    border: 1px solid var(--dark-black-color);
 }
 
 .contacts__form__radio-buttons {
     display: flex;
     justify-content: space-between;
-    width: 278px;
+    width: 276px;
 }
 
 .contacts__form__inputs {
     margin: 40px 0;
-}
-
-.contacts__form_img {
-    margin-right: -315px;
 }
 
 .message-input {
@@ -380,7 +393,7 @@ p {
     padding: 55px 60px 50px 60px;
     margin-top: 140px;
     height: 514px;
-    background-color: #191A23;
+    background-color: var(--black-color);
     border-radius: 45px 45px 0 0;
 }
 
@@ -396,7 +409,7 @@ p {
 }
 
 .footer__navigation__link {
-    color: white;
+    color: var(--white-color);
     text-decoration: underline;
 }
 
@@ -425,7 +438,7 @@ p {
 }
 
 .footer__contact-us__contacts {
-    color: white;
+    color: var(--white-color);
 
     margin-top: 7px;
 }
@@ -436,24 +449,24 @@ p {
 
 .footer__contact-us__news-subscribe {
     width: 634px;
-    background-color: #292A32;
+    background-color: var(--black-color);
     padding: 58px 40px;
 }
 
 .news-subscribe__input {
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid var(--white-color);
     width: 285px;
 }
 
 .news-subscribe__btn {
-    background-color: #B9FF66;
+    background-color: var(--green-color);
     border: none;
 }
 
 .footer__rights {
     margin-top: 50px;
-    color: white;
+    color: var(--white-color);
     display: flex;
 }
 
