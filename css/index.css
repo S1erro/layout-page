@@ -12,6 +12,11 @@
 /*    width: 1240px;*/
 /*}*/
 
+label {
+    font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
 a {
     font-family: "Space Grotesk", sans-serif;
 }
@@ -371,11 +376,7 @@ p {
     border: 1px solid var(--dark-black-color);
 }
 
-.contacts__form__radio-buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 276px;
-}
+
 
 .contacts__form__inputs {
     margin: 40px 0;
@@ -463,6 +464,52 @@ p {
     background-color: var(--green-color);
     border: none;
 }
+
+.contacts__form__radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 276px;
+}
+
+.contacts__form__radio-btn {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.contacts__form__radio-btn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.contacts__form__radio-btn label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 28px;
+    width: 28px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 50%;
+}
+
+.contacts__form__radio-btn input:checked ~ label::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 16px;
+    width: 16px;
+    background-color: var(--green-color);
+    border-radius: 50%;
+}
+
 
 .footer__rights {
     margin-top: 50px;
