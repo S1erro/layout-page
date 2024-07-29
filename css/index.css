@@ -11,9 +11,6 @@
 * {
     /*border: 1px solid;*/
 }
-body {
-    width: 1240px;
-}
 
 label {
     font-size: 18px;
@@ -86,6 +83,7 @@ p {
 }
 
 .header {
+    width: 1240px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -119,6 +117,7 @@ p {
 }
 
 .landing-page {
+    width: 1240px;
     margin-top: 65px;
 }
 
@@ -170,6 +169,10 @@ p {
 .summary-text-container {
     width: 580px;
     margin-left: 35px;
+}
+
+.services-page {
+    width: 1240px;
 }
 
 .learn-more__list-container {
@@ -255,6 +258,7 @@ p {
 }
 
 .free-proposal {
+    width:1240px;
     margin-top: 78px;
     display: flex;
     justify-content: space-between;
@@ -281,6 +285,7 @@ p {
 }
 
 .case-studies {
+    width: 1240px;
     margin-top: 165px;
 }
 
@@ -331,6 +336,10 @@ p {
     justify-content: space-between;
 }
 
+.working-process {
+    width: 1240px;
+}
+
 .working-process__processes-list-container {
     margin-top: 80px;
 }
@@ -366,6 +375,10 @@ p {
 .process__btn {
     border: none;
     background: transparent;
+}
+
+.team {
+    width: 1240px;
 }
 
 .team__members-container {
@@ -433,12 +446,17 @@ p {
 }
 
 .testimonials {
+    width: 1240px;
     margin-top: 207px;
 }
 
 .testimonials__container {
     height: 625px;
     margin-top: 80px;
+}
+
+.contacts {
+    width: 1240px;
 }
 
 .contacts__form-container {
@@ -498,6 +516,7 @@ p {
 }
 
 .footer {
+    width: 1240px;
     padding: 55px 60px 50px 60px;
     margin-top: 140px;
     height: 514px;
