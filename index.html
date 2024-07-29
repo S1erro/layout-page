@@ -15,51 +15,56 @@
 <body>
 <header class="header">
     <a href="#" class="header__logo">
-        <img src="images/landing-page/logo.svg" alt="#" class="header__logo-img">
+        <img src="images/landing-page/logo.svg" alt="main page" class="header__logo-img">
     </a>
-    <nav class="navigation">
-        <ul class="navigation__list list">
-            <li class="navigation__list__elem list__elem">
-                <a href="#" class="navigation__list__link list__link">About Us</a>
-            </li>
-            <li class="navigation__list__elem list__elem">
-                <a href="#" class="navigation__list__link list__link">Services</a>
-            </li>
-            <li class="navigation__list__elem list__elem">
-                <a href="#" class="navigation__list__link list__link">Use Cases</a>
-            </li>
-            <li class="navigation__list__elem list__elem">
-                <a href="#" class="navigation__list__link list__link">Pricing</a>
-            </li>
-            <li class="navigation__list__elem list__elem">
-                <a href="#" class="navigation__list__link list__link">Blog</a>
-            </li>
-            <li class="navigation__list__modal">
-                <button class="btn btn_white">
-                    Request a quote
-                </button>
-            </li>
-        </ul>
-    </nav>
+    <div class="navigation-container">
+        <nav class="navigation">
+            <ul class="navigation__list list">
+                <li class="navigation__list__elem list__elem">
+                    <a href="#" class="navigation__list__link list__link">About us</a>
+                </li>
+                <li class="navigation__list__elem list__elem">
+                    <a href="#" class="navigation__list__link list__link">Services</a>
+                </li>
+                <li class="navigation__list__elem list__elem">
+                    <a href="#" class="navigation__list__link list__link">Use Cases</a>
+                </li>
+                <li class="navigation__list__elem list__elem">
+                    <a href="#" class="navigation__list__link list__link">Pricing</a>
+                </li>
+                <li class="navigation__list__elem list__elem">
+                    <a href="#" class="navigation__list__link list__link">Blog</a>
+                </li>
+                <li class="navigation__list__modal">
+                    <button class="btn btn_white">
+                        Request a quote
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main>
     <section class="landing-page">
         <div class="landing-page__about">
-            <div class="landing-page__book">
-                <h1 class="landing-page__head">Navigating the digital landscape for success</h1>
+            <div class="landing-page__book-container">
+                <div class="landing-page__book">
+                    <h1 class="landing-page__head">Navigating the digital landscape for success</h1>
 
-                <p class="landing-page__text">
-                    Our digital marketing agency helps businesses grow and succeed online through a
-                    range of services including SEO, PPC, social media marketing, and content creation.
-                </p>
+                    <div class="landing-page__text-container">
+                        <p class="landing-page__text">
+                            Our digital marketing agency helps businesses grow and succeed online through a
+                            range of services including SEO, PPC, social media marketing, and content creation.
+                        </p>
+                    </div>
 
-                <button class="btn btn_black">
-                    Book a consultation
-                </button>
+                    <button class="btn btn_black">
+                        Book a consultation
+                    </button>
+                </div>
             </div>
-
-            <img src="images/landing-page/img-landing-page.png" alt="#" class="landing-page__img" width="601"
+            <img src="images/landing-page/img-landing-page.png" alt="image" class="landing-page__img" width="601"
                  height="515">
         </div>
 
@@ -115,136 +120,178 @@
 
         <div class="services-page__summary summary">
             <div class="services-page__heading-container">
-                <h2 class="services-page__heading-text header-with-bg header-with-bg_green">Services</h2>
+                <h2 class="services-page__heading-text header-with-bg header-with-bg_green">&nbspServices&nbsp</h2>
             </div>
-
-            <p class="summary-text">At our digital marketing agency, we offer a range of services to help
-                businesses grow and succeed online. These services include:
-            </p>
+            <div class="summary-text-container">
+                <p class="summary-text">
+                    At our digital marketing agency, we offer a range of services to help
+                    businesses grow and succeed online. These services include:
+                </p>
+            </div>
         </div>
+        <div class="learn-more__list-container">
+            <ul class="learn-more__list">
+                <li class="learn-more__elem block_underline elem_white">
+                    <div href="#" class="learn-more__container">
 
-        <ul class="learn-more__list">
-            <li class="learn-more__elem block_underline elem_white">
-                <div href="#" class="learn-more__container">
+                        <div>
+                            <h3 class="header-with-bg header-with-bg_green">&nbspSearch engine&nbsp</h3>
+                            <br/>
+                            <h3 class="header-with-bg header-with-bg_green">&nbspoptimization&nbsp</h3>
+                        </div>
 
-                    <div>
-                        <h3 class="header-with-bg header-with-bg_green">Search engine </h3>
-                        <h3 class="header-with-bg header-with-bg_green">optimization</h3>
+                        <div class="learn-more__container__link-container">
+                            <a href="#" class="learn-more__container__link link_black">
+                                <img src="images/services-page/link-arrow.svg" alt="link"
+                                     class="learn-more__container__link-icon">
+                                <span class="learn-more-span">Learn more</span>
+                            </a>
+                        </div>
+
                     </div>
 
-                    <a href="#" class="learn-more__container__link link link_black">
-                        <img src="images/services-page/link-arrow.svg" alt="#" class="learn-more__container__link-icon">
-                        Learn more
-                    </a>
-                </div>
+                    <img src="./images/services-page/services-images/search-engine.svg" alt="image" height="170px"
+                         width="210px"
+                         class="learn-more__elem__img">
 
-                <img src="./images/services-page/services-images/search-engine.svg" alt="#"
-                     class="learn-more__elem__img">
+                </li>
+                <li class="learn-more__elem block_underline elem_green">
+                    <div href="#" class="learn-more__container">
 
-            </li>
-            <li class="learn-more__elem block_underline elem_green">
-                <div href="#" class="learn-more__container">
+                        <div>
+                            <h3 class="header-with-bg header-with-bg_white">&nbspPay-per-click&nbsp</h3>
+                            <br/>
+                            <h3 class="header-with-bg header-with-bg_white">&nbspadvertising&nbsp</h3>
+                        </div>
 
-                    <div>
-                        <h3 class="header-with-bg header-with-bg_white">Pay-per-click </h3>
-                        <h3 class="header-with-bg header-with-bg_white">advertising</h3>
+                        <div class="learn-more__container__link-container">
+                            <a href="#" class="learn-more__container__link link_black">
+                                <img src="images/services-page/link-arrow.svg" alt="link"
+                                     class="learn-more__container__link-icon">
+                                <span class="learn-more-span">Learn more</span>
+                            </a>
+                        </div>
+
                     </div>
 
-                    <a href="#" class="learn-more__container__link link link_black">
-                        <img src="images/services-page/link-arrow.svg" alt="#" class="learn-more__container__link-icon">
-                        Learn more
-                    </a>
-                </div>
+                    <img src="./images/services-page/services-images/pay-per-click.svg" alt="image" height="148px"
+                         width="210px"
+                         class="learn-more__elem__img">
 
-                <img src="./images/services-page/services-images/pay-per-click.svg" alt="#"
-                     class="learn-more__elem__img">
+                </li>
+                <li class="learn-more__elem block_underline elem_black">
+                    <div href="#" class="learn-more__container">
 
-            </li>
-            <li class="learn-more__elem block_underline elem_black">
-                <div href="#" class="learn-more__container">
+                        <div>
+                            <h3 class="header-with-bg header-with-bg_white">&nbspSocial Media&nbsp</h3>
+                            <br/>
+                            <h3 class="header-with-bg header-with-bg_white">&nbspMarketing&nbsp</h3>
+                        </div>
 
-                    <div>
-                        <h3 class="header-with-bg header-with-bg_white">Social Media </h3>
-                        <h3 class="header-with-bg header-with-bg_white">Marketing</h3>
+                        <div class="learn-more__container__link-container">
+                            <a href="#" class="learn-more__container__link link_white">
+                                <img src="images/services-page/link-arrow-white.svg" alt="link"
+                                     class="learn-more__container__link-icon">
+                                <span class="learn-more-span">Learn more</span>
+                            </a>
+                        </div>
+
                     </div>
 
-                    <a href="#" class="learn-more__container__link link link_white">
-                        <img src="images/services-page/link-arrow-white.svg" alt="#"
-                             class="learn-more__container__link-icon">
-                        Learn more
-                    </a>
-                </div>
+                    <img src="./images/services-page/services-images/social-media.svg" alt="image" height="210px"
+                         width="209px"
+                         class="learn-more__elem__img">
 
-                <img src="./images/services-page/services-images/social-media.svg" alt="#"
-                     class="learn-more__elem__img">
+                </li>
+                <li class="learn-more__elem block_underline elem_white">
+                    <div href="#" class="learn-more__container">
 
-            </li>
-            <li class="learn-more__elem block_underline elem_white">
-                <div href="#" class="learn-more__container">
+                        <div>
+                            <h3 class="header-with-bg header-with-bg_green">&nbspEmail&nbsp</h3>
+                            <br/>
+                            <h3 class="header-with-bg header-with-bg_green">&nbspMarketing&nbsp</h3>
+                        </div>
 
-                    <h3 class="header-with-bg header-with-bg_green">Email Marketing</h3>
+                        <div class="learn-more__container__link-container">
+                            <a href="#" class="learn-more__container__link link_black">
+                                <img src="images/services-page/link-arrow.svg" alt="link"
+                                     class="learn-more__container__link-icon">
+                                <span class="learn-more-span">Learn more</span>
+                            </a>
+                        </div>
 
-                    <a href="#" class="learn-more__container__link link link_black">
-                        <img src="images/services-page/link-arrow.svg" alt="#" class="learn-more__container__link-icon">
-                        Learn more
-                    </a>
-                </div>
-
-                <img src="./images/services-page/services-images/email-marketing.svg" alt="#"
-                     class="learn-more__elem__img">
-
-            </li>
-            <li class="learn-more__elem block_underline elem_green">
-                <div href="#" class="learn-more__container">
-
-                    <h3 class="header-with-bg header-with-bg_white">Content Creation</h3>
-
-                    <a href="#" class="learn-more__container__link link link_black">
-                        <img src="images/services-page/link-arrow.svg" alt="#" class="learn-more__container__link-icon">
-                        Learn more
-                    </a>
-                </div>
-
-                <img src="./images/services-page/services-images/content-creation.svg" alt="#"
-                     class="learn-more__elem__img">
-
-            </li>
-            <li class="learn-more__elem block_underline elem_black">
-                <div href="#" class="learn-more__container">
-
-                    <div>
-                        <h3 class="header-with-bg header-with-bg_green">Analytics and </h3>
-                        <h3 class="header-with-bg header-with-bg_green">Tracking</h3>
                     </div>
 
-                    <a href="#" class="learn-more__container__link link link_white">
-                        <img src="images/services-page/link-arrow-white.svg" alt="#"
-                             class="learn-more__container__link-icon">
-                        Learn more
-                    </a>
-                </div>
+                    <img src="./images/services-page/services-images/email-marketing.svg" alt="image" height="193px"
+                         width="210px" class="learn-more__elem__img">
 
-                <img src="./images/services-page/services-images/analytics.svg" alt="#" class="learn-more__elem__img">
+                </li>
+                <li class="learn-more__elem block_underline elem_green">
+                    <div href="#" class="learn-more__container">
 
-            </li>
-        </ul>
+                        <div>
+                            <h3 class="header-with-bg header-with-bg_white">&nbspContent&nbsp</h3>
+                            <br>
+                            <h3 class="header-with-bg header-with-bg_white">&nbspCreation&nbsp</h3>
+                        </div>
+
+                        <div class="learn-more__container__link-container">
+                            <a href="#" class="learn-more__container__link link_black">
+                                <img src="images/services-page/link-arrow.svg" alt="link"
+                                     class="learn-more__container__link-icon">
+                                <span class="learn-more-span">Learn more</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <img src="./images/services-page/services-images/content-creation.svg" alt="image" height="196px"
+                         width="210px" class="learn-more__elem__img">
+
+                </li>
+                <li class="learn-more__elem block_underline elem_black">
+                    <div href="#" class="learn-more__container">
+
+                        <div>
+                            <h3 class="header-with-bg header-with-bg_green">&nbspAnalytics and&nbsp</h3>
+                            <h3 class="header-with-bg header-with-bg_green">&nbspTracking&nbsp</h3>
+                        </div>
+
+                        <div class="learn-more__container__link-container">
+                            <a href="#" class="learn-more__container__link link_white">
+                                <img src="images/services-page/link-arrow-white.svg" alt="link"
+                                     class="learn-more__container__link-icon">
+                                <span class="learn-more-span">Learn more</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <img src="./images/services-page/services-images/analytics.svg" alt="image" height="170px" width="210px"
+                         class="learn-more__elem__img">
+
+                </li>
+            </ul>
+        </div>
     </section>
 
     <section class="free-proposal elem_white">
-        <div class="free-proposal__info">
-            <h3 class="free-proposal__header">Let’s make things happen</h3>
+        <div class="free-proposal__info-container">
+            <div class="free-proposal__info">
+                <h3 class="free-proposal__header">Let’s make things happen</h3>
 
-            <p class="free-proposal__about">
-                Contact us today to learn more about how our digital <br/> marketing services can help your business
-                grow and <br/> succeed online.
-            </p>
+                <p class="free-proposal__about">
+                    Contact us today to learn more about how our digital marketing services can help your business
+                    grow and succeed online.
+                </p>
 
-            <button class="btn btn_black">
-                Get your free proposal
-            </button>
+                <button class="btn btn_black">
+                    Get your free proposal
+                </button>
+            </div>
         </div>
 
-        <img src="images/contact-us/contact-us-illustration.png" alt="#" width="359" height="395"
+        <img src="images/contact-us/contact-us-illustration.png" alt="image" width="359" height="395"
              class="free-proposal__img">
 
     </section>
@@ -252,261 +299,296 @@
     <section class="case-studies">
         <div class="case-studies__summary summary">
             <div class="case-studies__heading-container">
-                <h2 class="case-studies__heading-text header-with-bg header-with-bg_green">Case Studies</h2>
+                <h2 class="case-studies__heading-text header-with-bg header-with-bg_green">&nbspCase Studies&nbsp</h2>
             </div>
 
-            <p class="summary-text">
-                Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies
-            </p>
+            <div class="summary-text-container">
+                <p class="summary-text">
+                    Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies
+                </p>
+            </div>
         </div>
 
-        <ul class="case-studies__options-list options-list elem_black">
-            <li class="options-list__option">
-                <p class="options-list__option__text text_white">
-                    For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase
-                    in website traffic and a 25% increase in sales.
-                </p>
-                <a href="#" class="options-list__option__link link link_green">
-                    <img src="images/services-page/link-arrow.svg" alt="#" class="options-list__option__link-icon">
-                    Learn more
-                </a>
-            </li>
-            <li class="options-list__line">
-                <hr style="height: 186px">
-            </li>
-            <li class="options-list__option">
-                <p class="options-list__option__text text_white">
-                    For a B2B software company, we developed an SEO strategy that resulted in a first page ranking
-                    for key keywords and a 200% increase in organic traffic.
-                </p>
-                <a href="#" class="options-list__option__link link link_green">
-                    <img src="images/services-page/link-arrow.svg" alt="#" class="options-list__option__link-icon">
-                    Learn more
-                </a>
-            </li>
-            <li class="options-list__line">
-                <hr style="height: 186px">
-            </li>
-            <li class="options-list__option">
-                <p class="options-list__option__text text_white">
-                    For a national retail chain, we created a social media marketing campaign that increased
-                    followers by 25% and generated a 20% increase in online sales.
-                </p>
-                <a href="#" class="options-list__option__link link link_green">
-                    <img src="images/services-page/link-arrow.svg" alt="#" class="options-list__option__link-icon">
-                    Learn more
-                </a>
-            </li>
-        </ul>
+        <div class="case-studies__options-list-container elem_black">
+            <ul class="case-studies__options-list options-list">
+                <li class="options-list__option">
+                    <p class="options-list__option__text text_white">
+                        For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase
+                        in website traffic and a 25% increase in sales.
+                    </p>
+                    <div class="options-list__option__link-container">
+                        <a href="#" class="options-list__option__link link link_green">
+                            <img src="images/case-studies-page/link-arrow.svg" alt="Learn more"
+                                 class="options-list__option__link-icon">
+                            <span>Learn more</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="options-list__line">
+                    <hr style="height: 186px">
+                </li>
+                <li class="options-list__option">
+                    <p class="options-list__option__text text_white">
+                        For a B2B software company, we developed an SEO strategy that resulted in a first page ranking
+                        for key keywords and a 200% increase in organic traffic.
+                    </p>
+                    <div class="options-list__option__link-container">
+                        <a href="#" class="options-list__option__link link link_green">
+                            <img src="images/case-studies-page/link-arrow.svg" alt="Learn more"
+                                 class="options-list__option__link-icon">
+                            Learn more
+                        </a>
+                    </div>
+                </li>
+                <li class="options-list__line">
+                    <hr style="height: 186px">
+                </li>
+                <li class="options-list__option">
+                    <p class="options-list__option__text text_white">
+                        For a national retail chain, we created a social media marketing campaign that increased
+                        followers by 25% and generated a 20% increase in online sales.
+                    </p>
+                    <div class="options-list__option__link-container">
+                        <a href="#" class="options-list__option__link link link_green">
+                            <img src="images/case-studies-page/link-arrow.svg" alt="Learn more"
+                                 class="options-list__option__link-icon">
+                            Learn more
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <section class="working-process">
         <div class="working-process__summary summary">
             <div class="working-process__heading-container">
-                <h2 class="working-process__heading-text header-with-bg header-with-bg_green">Our Working Process</h2>
+                <h2 class="working-process__heading-text header-with-bg header-with-bg_green">
+                    &nbspOur Working Process&nbsp
+                </h2>
             </div>
 
-            <p class="summary-text">
-                Step-by-Step Guide to Achieving <br/> Your Business Goals
-            </p>
+            <div class="summary-text-container">
+                <p class="summary-text">
+                    Step-by-Step Guide to Achieving <br/> Your Business Goals
+                </p>
+            </div>
         </div>
 
-        <ul class="working-process__processes-list processes-list">
-            <li class="processes-list__process process elem_white block_underline">
-                <div class="process__header">
-                    <div class="process__container">
-                        <p class="process__number">01</p>
-                        <h3 class="process__description">Consultation</h3>
+        <div class="working-process__processes-list-container">
+            <ul class="working-process__processes-list processes-list">
+                <li class="processes-list__process process elem_white block_underline">
+                    <div class="process__header">
+                        <div class="process__container">
+                            <p class="process__number">01</p>
+                            <h3 class="process__description">Consultation</h3>
+                        </div>
+                        <button class="process__btn">
+                            <img src="images/working-processes/plus.svg" alt="turn the option">
+                        </button>
                     </div>
-                    <button class="process__btn">+</button>
-                </div>
-            </li>
-            <li class="processes-list__process process elem_white block_underline">
-                <div class="process__header">
-                    <div class="process__container">
-                        <p class="process__number">02</p>
-                        <h3 class="process__description">Research and Strategy Development</h3>
+                </li>
+                <li class="processes-list__process process elem_white block_underline">
+                    <div class="process__header">
+                        <div class="process__container">
+                            <p class="process__number">02</p>
+                            <h3 class="process__description">Research and Strategy Development</h3>
+                        </div>
+                        <button class="process__btn">
+                            <img src="images/working-processes/plus.svg" alt="turn the option">
+                        </button>
                     </div>
-                    <button class="process__btn">+</button>
-                </div>
-            </li>
-            <li class="processes-list__process process elem_white block_underline">
-                <div class="process__header">
-                    <div class="process__container">
-                        <p class="process__number">03</p>
-                        <h3 class="process__description">Implementation</h3>
+                </li>
+                <li class="processes-list__process process elem_white block_underline">
+                    <div class="process__header">
+                        <div class="process__container">
+                            <p class="process__number">03</p>
+                            <h3 class="process__description">Implementation</h3>
+                        </div>
+                        <button class="process__btn">
+                            <img src="images/working-processes/plus.svg" alt="turn the option">
+                        </button>
                     </div>
-                    <button class="process__btn">+</button>
-                </div>
-            </li>
-            <li class="processes-list__process process elem_white block_underline">
-                <div class="process__header">
-                    <div class="process__container">
-                        <p class="process__number">04</p>
-                        <h3 class="process__description">Monitoring and Optimization</h3>
+                </li>
+                <li class="processes-list__process process elem_white block_underline">
+                    <div class="process__header">
+                        <div class="process__container">
+                            <p class="process__number">04</p>
+                            <h3 class="process__description">Monitoring and Optimization</h3>
+                        </div>
+                        <button class="process__btn">
+                            <img src="images/working-processes/plus.svg" alt="turn the option">
+                        </button>
                     </div>
-                    <button class="process__btn">+</button>
-                </div>
-            </li>
-            <li class="processes-list__process process elem_white block_underline">
-                <div class="process__header">
-                    <div class="process__container">
-                        <p class="process__number">05</p>
-                        <h3 class="process__description">Reporting and Communication</h3>
+                </li>
+                <li class="processes-list__process process elem_white block_underline">
+                    <div class="process__header">
+                        <div class="process__container">
+                            <p class="process__number">05</p>
+                            <h3 class="process__description">Reporting and Communication</h3>
+                        </div>
+                        <button class="process__btn">
+                            <img src="images/working-processes/plus.svg" alt="turn the option">
+                        </button>
                     </div>
-                    <button class="process__btn">+</button>
-                </div>
-            </li>
-            <li class="processes-list__process process elem_white block_underline">
-                <div class="process__header">
-                    <div class="process__container">
-                        <p class="process__number">06</p>
-                        <h3 class="process__description">Continual Improvement</h3>
+                </li>
+                <li class="processes-list__process process elem_white block_underline">
+                    <div class="process__header">
+                        <div class="process__container">
+                            <p class="process__number">06</p>
+                            <h3 class="process__description">Continual Improvement</h3>
+                        </div>
+                        <button class="process__btn">
+                            <img src="images/working-processes/plus.svg" alt="turn the option">
+                        </button>
                     </div>
-                    <button class="process__btn">+</button>
-                </div>
-            </li>
-        </ul>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <section class="team">
         <div class="team__summary summary">
             <div class="team__heading-container">
-                <h2 class="team__heading-text header-with-bg header-with-bg_green">Team</h2>
+                <h2 class="team__heading-text header-with-bg header-with-bg_green">&nbspTeam&nbsp</h2>
             </div>
 
-            <p class="summary-text">
-                Meet the skilled and experienced team behind <br/> our successful digital marketing strategies
-            </p>
+            <div class="summary-text-container">
+                <p class="summary-text">
+                    Meet the skilled and experienced team behind our <br> successful digital marketing strategies
+                </p>
+            </div>
         </div>
 
-        <ul class="team__members members">
-            <li class="members__member elem_white block_underline">
-                <div class="members__member__about">
-                    <div class="members__member__photo-name">
-                        <img src="./images/team-page/John.svg" alt="#" class="members__member__photo">
-                        <div class="members__member__container">
-                            <h4 class="members__member__name">John Smith</h4>
-                            <p class="members__member__post">CEO and Founder</p>
+        <div class="team__members-container">
+            <ul class="team__members members">
+                <li class="members__member elem_white block_underline">
+                    <div class="members__member__about">
+                        <div class="members__member__photo-name">
+                            <img src="./images/team-page/John.svg" alt="John avatar" class="members__member__photo">
+                            <div class="members__member__container">
+                                <h4 class="members__member__name">John Smith</h4>
+                                <p class="members__member__post">CEO and Founder</p>
+                            </div>
                         </div>
+                        <a href="#" class="linked-in-link">
+                            <img src="./images/team-page/linked.svg" alt="LinkedIn" class="logo">
+                        </a>
                     </div>
-                    <a href="#" class="linked-in-link">
-                        <img src="./images/team-page/linked.svg" alt="" class="logo">
-                    </a>
-                </div>
-                <hr class="line">
-                <div class="members__member__description">
-                    <p class="members__member__text">
-                        10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy
-                    </p>
-                </div>
-            </li>
-            <li class="members__member elem_white block_underline">
-                <div class="members__member__about">
-                    <div class="members__member__photo-name">
-                        <img src="./images/team-page/Jane.svg" alt="#" class="members__member__photo">
-                        <div class="members__member__container">
-                            <h4 class="members__member__name">Jane Doe</h4>
-                            <p class="members__member__post">Director of <br/> Operations</p>
+                    <hr class="line">
+                    <div class="members__member__description">
+                        <p class="members__member__text">
+                            10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy
+                        </p>
+                    </div>
+                </li>
+                <li class="members__member elem_white block_underline">
+                    <div class="members__member__about">
+                        <div class="members__member__photo-name">
+                            <img src="./images/team-page/Jane.svg" alt="Jane avatar" class="members__member__photo">
+                            <div class="members__member__container">
+                                <h4 class="members__member__name">Jane Doe</h4>
+                                <p class="members__member__post">Director of <br/> Operations</p>
+                            </div>
                         </div>
+                        <a href="#" class="linked-in-link">
+                            <img src="./images/team-page/linked.svg" alt="LinkedIn" class="logo">
+                        </a>
                     </div>
-                    <a href="#" class="linked-in-link">
-                        <img src="./images/team-page/linked.svg" alt="" class="logo">
-                    </a>
-                </div>
-                <hr class="line">
-                <div class="members__member__description">
-                    <p class="members__member__text">
-                        7+ years of experience in project management and team leadership. Strong organizational and
-                        communication skills
-                    </p>
-                </div>
-            </li>
-            <li class="members__member elem_white block_underline">
-                <div class="members__member__about">
-                    <div class="members__member__photo-name">
-                        <img src="./images/team-page/Michael.svg" alt="#" class="members__member__photo">
-                        <div class="members__member__container">
-                            <h4 class="members__member__name">Michael Brown</h4>
-                            <p class="members__member__post">Senior SEO <br/> Specialist</p>
+                    <hr class="line">
+                    <div class="members__member__description">
+                        <p class="members__member__text">
+                            7+ years of experience in project management and team leadership. Strong organizational and
+                            communication skills
+                        </p>
+                    </div>
+                </li>
+                <li class="members__member elem_white block_underline">
+                    <div class="members__member__about">
+                        <div class="members__member__photo-name">
+                            <img src="./images/team-page/Michael.svg" alt="Michael avatar" class="members__member__photo">
+                            <div class="members__member__container">
+                                <h4 class="members__member__name">Michael Brown</h4>
+                                <p class="members__member__post">Senior SEO <br/> Specialist</p>
+                            </div>
                         </div>
+                        <a href="#" class="linked-in-link">
+                            <img src="./images/team-page/linked.svg" alt="LinkedIn" class="logo">
+                        </a>
                     </div>
-                    <a href="#" class="linked-in-link">
-                        <img src="./images/team-page/linked.svg" alt="" class="logo">
-                    </a>
-                </div>
-                <hr class="line">
-                <div class="members__member__description">
-                    <p class="members__member__text">
-                        5+ years of experience in SEO and content creation. Proficient in keyword research and on-page
-                        optimization
-                    </p>
-                </div>
-            </li>
-            <li class="members__member elem_white block_underline">
-                <div class="members__member__about">
-                    <div class="members__member__photo-name">
-                        <img src="./images/team-page/Emily.svg" alt="#" class="members__member__photo">
-                        <div class="members__member__container">
-                            <h4 class="members__member__name">Emily Johnson</h4>
-                            <p class="members__member__post">PPC Manager</p>
+                    <hr class="line">
+                    <div class="members__member__description">
+                        <p class="members__member__text">
+                            5+ years of experience in SEO and content creation. Proficient in keyword research and
+                            on-page optimization
+                        </p>
+                    </div>
+                </li>
+                <li class="members__member elem_white block_underline members__member_second-raw">
+                    <div class="members__member__about">
+                        <div class="members__member__photo-name">
+                            <img src="./images/team-page/Emily.svg" alt="Emily avatar" class="members__member__photo">
+                            <div class="members__member__container">
+                                <h4 class="members__member__name">Emily Johnson</h4>
+                                <p class="members__member__post">PPC Manager</p>
+                            </div>
                         </div>
+                        <a href="#" class="linked-in-link">
+                            <img src="./images/team-page/linked.svg" alt="LinkedIn" class="logo">
+                        </a>
                     </div>
-                    <a href="#" class="linked-in-link">
-                        <img src="./images/team-page/linked.svg" alt="" class="logo">
-                    </a>
-                </div>
-                <hr class="line">
-                <div class="members__member__description">
-                    <p class="members__member__text">
-                        3+ years of experience in paid search advertising. Skilled in campaign management and
-                        performance analysis
-                    </p>
-                </div>
-            </li>
-            <li class="members__member elem_white block_underline">
-                <div class="members__member__about">
-                    <div class="members__member__photo-name">
-                        <img src="./images/team-page/Brian.svg" alt="#" class="members__member__photo">
-                        <div class="members__member__container">
-                            <h4 class="members__member__name">Brian Williams</h4>
-                            <p class="members__member__post">Social Media <br/> Specialist</p>
+                    <hr class="line">
+                    <div class="members__member__description">
+                        <p class="members__member__text">
+                            3+ years of experience in paid search advertising. Skilled in campaign management and
+                            performance analysis
+                        </p>
+                    </div>
+                </li>
+                <li class="members__member elem_white block_underline members__member_second-raw">
+                    <div class="members__member__about">
+                        <div class="members__member__photo-name">
+                            <img src="./images/team-page/Brian.svg" alt="Brian avatar" class="members__member__photo">
+                            <div class="members__member__container">
+                                <h4 class="members__member__name">Brian Williams</h4>
+                                <p class="members__member__post">Social Media <br/> Specialist</p>
+                            </div>
                         </div>
+                        <a href="#" class="linked-in-link">
+                            <img src="./images/team-page/linked.svg" alt="LinkedIn" class="logo">
+                        </a>
                     </div>
-                    <a href="#" class="linked-in-link">
-                        <img src="./images/team-page/linked.svg" alt="" class="logo">
-                    </a>
-                </div>
-                <hr class="line">
-                <div class="members__member__description">
-                    <p class="members__member__text">
-                        4+ years of experience in social media marketing. Proficient in creating and scheduling content,
-                        analyzing metrics, and building engagement
-                    </p>
-                </div>
-            </li>
-            <li class="members__member elem_white block_underline">
-                <div class="members__member__about">
-                    <div class="members__member__photo-name">
-                        <img src="./images/team-page/Sarah.svg" alt="#" class="members__member__photo">
-                        <div class="members__member__container">
-                            <h4 class="members__member__name">Sarah Kim</h4>
-                            <p class="members__member__post">Content Creator</p>
+                    <hr class="line">
+                    <div class="members__member__description">
+                        <p class="members__member__text">
+                            4+ years of experience in social media marketing. Proficient in creating and scheduling
+                            content, analyzing metrics, and building engagement
+                        </p>
+                    </div>
+                </li>
+                <li class="members__member elem_white block_underline members__member_second-raw">
+                    <div class="members__member__about">
+                        <div class="members__member__photo-name">
+                            <img src="./images/team-page/Sarah.svg" alt="Sarah avatar" class="members__member__photo">
+                            <div class="members__member__container">
+                                <h4 class="members__member__name">Sarah Kim</h4>
+                                <p class="members__member__post">Content Creator</p>
+                            </div>
                         </div>
+                        <a href="#" class="linked-in-link">
+                            <img src="./images/team-page/linked.svg" alt="LinkedIn" class="logo">
+                        </a>
                     </div>
-                    <a href="#" class="linked-in-link">
-                        <img src="./images/team-page/linked.svg" alt="" class="logo">
-                    </a>
-                </div>
-                <hr class="line">
-                <div class="members__member__description">
-                    <p class="members__member__text">
-                        2+ years of experience in writing and editing
-                        Skilled in creating compelling, SEO-optimized content for various industries
-                    </p>
-                </div>
-            </li>
-        </ul>
+                    <hr class="line">
+                    <div class="members__member__description">
+                        <p class="members__member__text">
+                            2+ years of experience in writing and editing <br/>
+                            Skilled in creating compelling, SEO-optimized content for various industries
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
         <button class="team__btn btn btn_black">
             See all team
@@ -517,13 +599,15 @@
     <section class="testimonials">
         <div class="testimonials__summary summary">
             <div class="testimonials__heading-container">
-                <h2 class="testimonials__heading-text header-with-bg header-with-bg_green">Testimonials</h2>
+                <h2 class="testimonials__heading-text header-with-bg header-with-bg_green">&nbspTestimonials&nbsp</h2>
             </div>
 
-            <p class="summary-text">
-                Hear from Our Satisfied Clients: Read Our Testimonials<br/>to Learn More about Our Digital Marketing
-                Services
-            </p>
+            <div class="summary-text-container">
+                <p class="summary-text">
+                    Hear from Our Satisfied Clients: Read Our Testimonials<br/>to Learn More about Our Digital Marketing
+                    Services
+                </p>
+            </div>
         </div>
 
         <div class="testimonials__container elem_black">
@@ -537,51 +621,59 @@
     <section class="contacts">
         <div class="contacts__summary summary">
             <div class="contacts__heading-container">
-                <h2 class="contacts__heading-text header-with-bg header-with-bg_green">Contact Us</h2>
+                <h2 class="contacts__heading-text header-with-bg header-with-bg_green">&nbspContact Us&nbsp</h2>
             </div>
 
-            <p class="summary-text">
-                Connect with Us: Let's Discuss Your<br/> Digital Marketing Needs
-            </p>
+            <div class="summary-text-container">
+                <p class="summary-text">
+                    Connect with Us: Let's Discuss Your<br/> Digital Marketing Needs
+                </p>
+            </div>
         </div>
 
-        <div class="contacts__form elem_white">
-            <div class="contacts__form__container">
-                <div class="contacts__form__radio-buttons">
-                    <div class="contacts__form__radio-btn">
-                        <input type="radio" id="Say Hi" name="name" value="Say Hi" class="radio-btn" checked/>
-                        <label for="Say Hi">Say Hi</label>
+        <div class="contacts__form-container">
+            <div class="contacts__form elem_white">
+                <div class="contacts__form__container">
+                    <div class="contacts__form__radio-buttons">
+                        <div class="contacts__form__radio-btn">
+                            <input type="radio" id="Say Hi" name="name" value="Say Hi" class="radio-btn" checked/>
+                            <label for="Say Hi">Say Hi</label>
+                        </div>
+
+                        <div class="contacts__form__radio-btn">
+                            <input type="radio" id="Get a Quote" name="name" value="Get a Quote" class="radio-btn"/>
+                            <label for="Get a Quote">Get a Quote</label>
+                        </div>
                     </div>
 
-                    <div class="contacts__form__radio-btn">
-                        <input type="radio" id="Get a Quote" name="name" value="Get a Quote" class="radio-btn"/>
-                        <label for="Get a Quote">Get a Quote</label>
+                    <div class="contacts__form__inputs-container">
+                        <div class="contacts__form__inputs">
+                            <div class="contacts__form__input">
+                                <label for="Name" class="label">Name</label>
+                                <input type="text" placeholder="Name" id="Name"
+                                       class="contacts__form__input-name input">
+                            </div>
+
+                            <div class="contacts__form__input">
+                                <label for="Email" class="label">Email*</label>
+                                <input type="email" placeholder="Email" id="Email"
+                                       class="contacts__form__input-name input">
+                            </div>
+
+                            <div class="contacts__form__input">
+                                <label for="Message" class="label">Message*</label>
+                                <textarea placeholder="Message" id="Message"
+                                          class="contacts__form__input-name message-input input"></textarea>
+                            </div>
+                        </div>
                     </div>
+
+
+                    <button class="contacts__button btn btn_black">Send Message</button>
                 </div>
 
-                <div class="contacts__form__inputs">
-                    <div class="contacts__form__input">
-                        <label for="Name">Name</label>
-                        <input type="text" placeholder="Name" id="Name" class="contacts__form__input-name input">
-                    </div>
-
-                    <div class="contacts__form__input">
-                        <label for="Email">Email*</label>
-                        <input type="email" placeholder="Email" id="Email" class="contacts__form__input-name input">
-                    </div>
-
-                    <div class="contacts__form__input">
-                        <label for="Message">Message*</label>
-                        <textarea placeholder="Message" id="Message"
-                                  class="contacts__form__input-name message-input input"></textarea>
-                    </div>
-                </div>
-
-
-                <button class="contacts__button btn btn_black">Send Message</button>
+                <img src="images/contacts/contacts.png" alt="image" class="contacts__form_img">
             </div>
-
-            <img src="images/contacts/contacts.png" alt="" class="contacts__form_img">
         </div>
     </section>
 </main>
@@ -591,52 +683,56 @@
         <a href="#" class="footer__logo">
             <img src="images/logo-footer.svg" alt="" class="footer__img">
         </a>
-        <nav class="footer__navigation__container">
-            <ul class="footer__navigation__list list">
-                <li class="footer__navigation__elem list__elem">
-                    <a href="#" class="footer__navigation__link list__link">About Us</a>
-                </li>
-                <li class="footer__navigation__elem list__elem">
-                    <a href="#" class="footer__navigation__link list__link">Services</a>
-                </li>
-                <li class="footer__navigation__elem list__elem">
-                    <a href="#" class="footer__navigation__link list__link">Use Cases</a>
-                </li>
-                <li class="footer__navigation__elem list__elem">
-                    <a href="#" class="footer__navigation__link list__link">Pricing</a>
-                </li>
-                <li class="footer__navigation__elem list__elem">
-                    <a href="#" class="footer__navigation__link list__link">Blog</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="footer__navigation-container">
+            <nav class="footer__navigation__elems">
+                <ul class="footer__navigation__list list">
+                    <li class="footer__navigation__elem list__elem">
+                        <a href="#" class="footer__navigation__link list__link">About Us</a>
+                    </li>
+                    <li class="footer__navigation__elem list__elem">
+                        <a href="#" class="footer__navigation__link list__link">Services</a>
+                    </li>
+                    <li class="footer__navigation__elem list__elem">
+                        <a href="#" class="footer__navigation__link list__link">Use Cases</a>
+                    </li>
+                    <li class="footer__navigation__elem list__elem">
+                        <a href="#" class="footer__navigation__link list__link">Pricing</a>
+                    </li>
+                    <li class="footer__navigation__elem list__elem">
+                        <a href="#" class="footer__navigation__link list__link">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <div class="footer__messenger__links">
             <a href="#" class="footer__messenger__link">
-                <img src="images/footer/linked.svg" alt="#" class="messenger__icon">
+                <img src="images/footer/linked.svg" alt="LinkedIn" class="messenger__icon">
             </a>
             <a href="#" class="footer__messenger__link">
-                <img src="images/footer/facebook.svg" alt="#" class="messenger__icon">
+                <img src="images/footer/facebook.svg" alt="Facebook" class="messenger__icon">
             </a>
             <a href="#" class="footer__messenger__link">
-                <img src="images/footer/twitter.svg" alt="#" class="messenger__icon">
+                <img src="images/footer/twitter.svg" alt="Twitter" class="messenger__icon">
             </a>
         </div>
     </div>
 
-    <div class="footer__contact-us">
-        <div class="footer__contact-us__container">
-            <h4 class="footer__contact-us__header header-with-bg header-with-bg_green">Contact us:</h4>
-            <div class="footer__contact-us__contacts">
-                <p class="footer__contact-us__contact">Email: info@positivus.com</p>
-                <p class="footer__contact-us__contact">Phone: 555-567-8901</p>
-                <p class="footer__contact-us__contact">Address: 1234 Main St
-                    Moonstone City, Stardust State 12345</p>
+    <div class="footer__contact-us-container">
+        <div class="footer__contact-us">
+            <div class="footer__contact-us__info">
+                <h4 class="footer__contact-us__header header-with-bg header-with-bg_green">&nbspContact us:&nbsp</h4>
+                <div class="footer__contact-us__contacts">
+                    <p class="footer__contact-us__contact">Email: info@positivus.com</p>
+                    <p class="footer__contact-us__contact">Phone: 555-567-8901</p>
+                    <p class="footer__contact-us__contact">Address: 1234 Main St <br/>
+                        Moonstone City, Stardust State 12345</p>
+                </div>
             </div>
-        </div>
 
-        <div class="footer__contact-us__news-subscribe news-subscribe elem_white">
-            <input type="email" placeholder="Email" class="news-subscribe__input input">
-            <button class="news-subscribe__btn btn">Subscribe to news</button>
+            <div class="footer__contact-us__news-subscribe news-subscribe elem_white">
+                <input type="email" placeholder="Email" class="news-subscribe__input input">
+                <button class="news-subscribe__btn btn">Subscribe to news</button>
+            </div>
         </div>
     </div>
 
